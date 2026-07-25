@@ -35,6 +35,12 @@
     '';
   };
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv.enable = true;
+  };
+
   programs.starship = {
     enableBashIntegration = true;
     enableNushellIntegration = true;
